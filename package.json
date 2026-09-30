@@ -1,0 +1,21 @@
+{
+  "name": "badlny",
+  "version": "7.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npm run build && node scripts/local-preview.mjs",
+    "preview:db": "node scripts/start-local-database.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:repository": "node scripts/check-repository.mjs --history"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "6.0.0",
+    "pg": "8.23.0"
+  }
+}

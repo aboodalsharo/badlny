@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>بَدّلني | منصة تبادل الشعب الجامعية - جامعة العلوم والتكنولوجيا JUST</title>
+  <meta name="description" content="منصة تبادل الشعب الدراسية لطلبة جامعة العلوم والتكنولوجيا الأردنية (JUST) - ابحث عن شعبتك البديلة أو قدّم طلب تبادل بمطابقة ذكية وتواصل مباشر عبر الواتساب.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>">
+  
+  <!-- Google Fonts: IBM Plex Sans Arabic & Tajawal & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="redesign.css?v=8">
+</head>
+<body>
+
+  <a class="skip-link" href="#explore">انتقل إلى الطلبات</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 7h15m-4-4 4 4-4 4M20 17H5m4-4-4 4 4 4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5v15M12 6C9 4 5 4 2 5v14c3-1 7-1 10 1 3-2 7-2 10-1V5c-3-1-7-1-10 1Z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7l1-7Z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5M3 9h18M5 9v11m7-11v11m7-11v11M2 21h20"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 0 1-9 9 9 9 0 0 1-4-.9L3 21l1.4-4.8a9 9 0 1 1 16.6-4.7Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="m10 3-.6 2.3-2 .9-2.1-.7-2 3.5L5 11v2l-1.7 2 2 3.5 2.1-.7 2 .9L10 21h4l.6-2.3 2-.9 2.1.7 2-3.5-1.7-2v-2l1.7-2-2-3.5-2.1.7-2-.9L14 3Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 13A9 9 0 0 1 11 3 9 9 0 1 0 21 13Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+  </svg>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="logo-area" id="logoLink">
+          <div class="logo-icon-box"><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg></div>
+          <div class="logo-title-group">
+            <h1>
+              <span>بَدّلني</span>
+              <span class="logo-badge">JUST STUDENTS</span>
+            </h1>
+            <p class="logo-subtitle">شعبتك الأنسب، بخطوة أبسط.</p>
+          </div>
+        </a>
+
+        <nav class="header-links" aria-label="التنقل الرئيسي">
+          <a class="nav-link active" href="#explore">استكشف الطلبات</a>
+          <a class="nav-link" href="#howItWorks">كيف بتشتغل؟</a>
+          <a class="nav-link" href="#developers">المطورون</a>
+        </nav>
+        <div class="nav-actions">
+          <!-- Theme Toggle -->
+          <button class="btn btn-icon-only" id="themeToggleBtn" title="تبديل المظهر الداكن / الفاتح" aria-label="تبديل المظهر">
+            <span id="themeIcon"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></span>
+          </button>
+          
+          <!-- Primary Submit CTA in Nav -->
+          <button class="btn btn-primary btn-submit-nav" id="openSubmitModalBtn">
+            <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+            <span class="btn-text">أضف طلبك</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+      <div class="hero-pill" id="registrationStatus" data-state="open" role="status" aria-live="polite" aria-atomic="true">
+        <span class="pulse-indicator" aria-hidden="true"></span>
+        <span id="registrationStatusText">فترة السحب والإضافة والتسجيل · متاح الآن لجميع الكليات</span>
+      </div>
+      
+      <h2 class="hero-title">
+        شعبتك مش مناسبة؟<br>
+        <span class="hero-highlight">خلّي جدولك</span><br>
+        على مزاجك<span class="hero-period">.</span>
+      </h2>
+      
+      <p class="hero-subtitle">
+        لكل شعبة فل، في فرصة ثانية. لاقي زميلك، بدّل شعبتك، ورتّب يومك بالطريقة اللي بتناسبك.
+      </p>
+
+      <!-- Primary actions retain the existing functional IDs. -->
+      <div class="hero-actions-container" id="heroActionCards">
+        <button type="button" class="btn btn-primary hero-action-card" id="heroSearchActionCard">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg> استكشف الطلبات
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </button>
+        <button type="button" class="btn btn-secondary hero-action-card" id="heroAddActionCard">
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> أضف طلب تبادل
+        </button>
+      </div>
+      <div class="hero-reassurance"><span class="mini-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span> بدون إنشاء حساب <span class="separator">·</span> تواصل مباشر مع زملائك</div>
+      <p class="hero-campus">لطلبة جامعة العلوم والتكنولوجيا الأردنية <bdi>JUST</bdi></p>
+      </div>
+      <div class="hero-visual" aria-label="مثال توضيحي: تبادل الشعبة 3 بالشعبة 1">
+        <div class="visual-orbit orbit-one" aria-hidden="true"></div><div class="visual-orbit orbit-two" aria-hidden="true"></div>
+        <div class="visual-label"><span class="small-dot"></span> جدولك، بطريقة أريح <span class="visual-label-en" lang="en">A BETTER FIT.</span></div>
+        <div class="schedule-card">
+          <div class="schedule-head"><div class="schedule-avatar"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div><div><strong>تراكيب البيانات</strong><span><bdi>CS211</bdi> · مثال على تبادل الشعب</span></div><span class="schedule-kebab" aria-hidden="true">•••</span></div>
+          <div class="schedule-days"><span>الأحد</span><span>الإثنين</span><span>الثلاثاء</span><span>الأربعاء</span><span>الخميس</span></div>
+          <div class="schedule-grid" aria-hidden="true"><div class="schedule-block lavender">محاضرة<br><small>09:00</small></div><div></div><div class="schedule-block mint">مختبر<br><small>11:00</small></div><div></div><div class="schedule-block peach">محاضرة<br><small>10:00</small></div><div></div><div class="schedule-block lavender">محاضرة<br><small>12:00</small></div><div></div><div class="schedule-block mint">مختبر<br><small>11:00</small></div><div></div></div>
+          <div class="schedule-footer"><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg><span>شعبة مختلفة. يوم أفضل.</span><span class="schedule-spark" aria-hidden="true">✦</span></div>
+        </div>
+        <div class="floating-swap"><span class="floating-icon"><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg></span><div><span class="floating-caption">تبادل الشعب</span><strong>شعبة <bdi>03</bdi> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg> شعبة <bdi>01</bdi></strong></div></div>
+        <div class="floating-match"><span class="match-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>إنت بدك شعبته، وهو بده شعبتك.</strong><span>هيك بتكون المطابقة التامة!</span></div></div>
+        <span class="visual-caption">تصوّر توضيحي، وليس طلبًا منشورًا</span>
+      </div>
+    </section>
+      <!-- Quick Stats Ribbon -->
+      <div class="stats-ribbon">
+        <div class="stat-item">
+          <div class="stat-icon"><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg></div>
+          <div class="stat-info">
+            <div class="stat-number" id="statTotalRequests">0</div>
+            <div class="stat-label">طلبات التبادل النشطة</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon gold"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></div>
+          <div class="stat-info">
+            <div class="stat-number" id="statInstantMatches">0</div>
+            <div class="stat-label">مطابقات تامة متاحة</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon green"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div>
+          <div class="stat-info">
+            <div class="stat-number" id="statCoursesCount">1702</div>
+            <div class="stat-label">مساق مدعوم بالمنصة</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></div>
+          <div class="stat-info">
+            <div class="stat-number" id="statFacultiesCount">14</div>
+            <div class="stat-label">كليات ومراكز دراسية</div>
+          </div>
+        </div>
+      </div>
+
+    <section class="how-it-works" id="howItWorks" aria-labelledby="howTitle">
+      <div class="how-intro"><span class="eyebrow">الفكرة بسيطة</span><h2 id="howTitle">ثلاث خطوات،<br>وفرصة لجدول أحسن.</h2></div>
+      <div class="how-step"><span class="step-number">01</span><h3>اختار مادتك</h3><p>حدّد كليتك، تخصصك، والمادة اللي بدك تبدّل شعبتها.</p></div>
+      <div class="how-step"><span class="step-number">02</span><h3>لاقي الفرصة</h3><p>شوف الطلبات، أو أضف شعبتك والشعبة اللي بتناسبك.</p></div>
+      <div class="how-step"><span class="step-number">03</span><h3>تواصل وبدّل</h3><p>اتفق مع زميلك على واتساب وتابعوا التبديل بالجامعة.</p></div>
+    </section>
+
+    <section class="explore-section" id="explore" aria-labelledby="exploreTitle">
+      <div class="explore-heading"><div><span class="eyebrow">لوحة تبادل الشعب</span><h2 id="exploreTitle">شعبتك الجاية، ممكن تكون هون.</h2><p>ابحث بين الطلبات، وخلي المطابقة علينا.</p></div><button class="btn btn-secondary" type="button" id="explorerAddBtn"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> أضف طلبك</button></div>
+
+    <!-- Smart Match Banner (Shows only when reciprocal pairs exist) -->
+    <section class="smart-match-banner" id="smartMatchBanner" style="display: none;">
+      <div class="smart-match-header">
+        <div class="smart-match-title">
+          <span class="pulse-dot"></span>
+          <svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg><span>لقينا شعب مناسبة لبعضها!</span>
+        </div>
+        <span class="chip-label" style="color: var(--accent-gold); font-weight: 700;" id="mutualMatchCountBadge"></span>
+      </div>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+        يوجد طلاب يمتلك كل منهم الشعبة التي يبحث عنها الآخر تماماً لنفس المادة! تواصلوا مباشرة لإتمام التبادل:
+      </p>
+      <div class="mutual-cards-grid" id="mutualCardsContainer"></div>
+    </section>
+
+    <!-- Content Navigation Tabs -->
+    <nav class="content-tabs" aria-label="فئات العرض">
+      <button class="tab-btn active" data-tab="all" id="tabAll" aria-pressed="true">
+        <svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg><span>كل الطلبات</span>
+        <span class="tab-badge" id="tabBadgeAll">0</span>
+      </button>
+      <button class="tab-btn" data-tab="matches" id="tabMatches" aria-pressed="false">
+        <svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg><span>المطابقات التامة</span>
+        <span class="tab-badge" id="tabBadgeMatches">0</span>
+      </button>
+      <button class="tab-btn" data-tab="my" id="tabMyRequests" aria-pressed="false">
+        <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg><span>طلباتي</span>
+        <span class="tab-badge" id="tabBadgeMy">0</span>
+      </button>
+    </nav>
+
+    <!-- Search & Filter Hub (اللي بدور على شعب) -->
+    <section class="search-hub" id="searchHub" aria-label="محرك البحث والتصفية">
+      <div class="search-hub-header">
+        <h3 class="search-hub-title">شو المادة اللي بتدور عليها؟</h3>
+        <p class="search-hub-subtitle">اسم المادة، رمزها، أو رقم السطر… كله بيوصلك.</p>
+      </div>
+
+      <!-- Main Omnibox Search -->
+      <div class="search-main-bar">
+        <div class="search-input-wrapper">
+          <span class="search-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span>
+          <input 
+            type="text" 
+            id="mainSearchInput" 
+            class="main-search-input" 
+            placeholder="ابحث عن المادة، رمز المساق، أو رقم السطر…"
+            aria-label="البحث عن مادة أو طلب تبادل"
+            autocomplete="off"
+          >
+          <button class="search-clear-btn" id="searchClearBtn" title="مسح البحث" aria-label="مسح البحث"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        </div>
+      </div>
+
+      <!-- Advanced Cascading Filters Grid -->
+      <div class="filters-grid">
+        <div class="form-group">
+          <label for="filterFaculty">الكلية</label>
+          <select id="filterFaculty" class="select-custom">
+            <option value="">جميع الكليات</option>
+            <option value="cit">💻 كلية تكنولوجيا الحاسوب والمعلومات</option>
+            <option value="sci">🔬 كلية العلوم والآداب</option>
+            <option value="mil">🎖️ شعبة العلوم العسكرية</option>
+            <option value="lang">🌐 مركز اللغات</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filterDepartment">التخصص / القسم</label>
+          <select id="filterDepartment" class="select-custom" disabled>
+            <option value="">جميع التخصصات</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filterCourse">المادة</label>
+          <select id="filterCourse" class="select-custom" disabled>
+            <option value="">جميع المواد</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filterDesiredSection">الشعبة المطلوبة</label>
+          <input type="number" id="filterDesiredSection" class="input-custom" placeholder="مثال: 2" min="1" max="99">
+        </div>
+      </div>
+
+      <!-- Quick Filter Chips -->
+      <div class="quick-chips">
+        <span class="chip-label">اختصارات:</span>
+        <button class="filter-chip active" data-filter="all" aria-pressed="true">كل المواد</button>
+        <button class="filter-chip" data-faculty="cit" aria-pressed="false">تكنولوجيا المعلومات</button>
+        <button class="filter-chip" data-faculty="sci" aria-pressed="false">العلوم والآداب</button>
+        <button class="filter-chip" data-faculty="mil" aria-pressed="false">العلوم العسكرية</button>
+        <button class="filter-chip" data-faculty="lang" aria-pressed="false">مركز اللغات</button>
+        <button class="filter-chip" data-special="matches" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg> مطابقات تامة</button>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+      <div class="results-header">
+        <div class="results-count">
+          <span class="results-dot" aria-hidden="true"></span><span id="resultsCount">0</span> طلب متاح
+        </div>
+        <div class="results-sort">
+          <label for="sortSelect">ترتيب حسب:</label>
+          <select id="sortSelect">
+            <option value="newest">الأحدث نشرًا</option>
+            <option value="oldest">الأقدم</option>
+            <option value="course">اسم المادة</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="cards-grid" id="requestsGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </section>
+    </section>
+
+    <section class="community-note"><div class="community-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></div><div><h2>منّا وفينا. لجدول أحسن إلنا كلنا.</h2><p>بَدّلني مبادرة طلابية مستقلة. التبادل يتم بالاتفاق بين الطلبة ووفق إجراءات الجامعة.</p></div><a href="#howItWorks">اعرف كيف بتشتغل <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></section>
+  </main>
+
+  <!-- Submit Swap Request Modal (إضافة طلب تبادل) -->
+  <div class="modal-backdrop" id="submitModal" role="dialog" aria-modal="true" aria-labelledby="modalSubmitTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="eyebrow">فرصتك بتبدأ هون</span><h2 id="modalSubmitTitle">خلّينا نلاقي شعبتك البديلة.</h2>
+          <p>أدخل بيانات مادتك والشعبة التي معك والشعبة التي ترغب بها</p>
+        </div>
+        <button class="modal-close-btn" id="closeSubmitModalBtn" aria-label="إغلاق"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+
+      <form id="swapRequestForm">
+        <div class="modal-body">
+          <!-- Step 1: Faculty & Department Cascading -->
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="reqFaculty">1. الكلية <span class="required-star">*</span></label>
+              <select id="reqFaculty" class="select-custom" required>
+                <option value="">اختر الكلية...</option>
+                <option value="cit">💻 كلية تكنولوجيا الحاسوب والمعلومات</option>
+                <option value="sci">🔬 كلية العلوم والآداب</option>
+                <option value="mil">🎖️ شعبة العلوم العسكرية</option>
+                <option value="lang">🌐 مركز اللغات</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="reqDepartment">2. التخصص / القسم <span class="required-star">*</span></label>
+              <select id="reqDepartment" class="select-custom" required disabled>
+                <option value="">اختر التخصص أولاً...</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Step 2: Course Selection with Combobox and Live Search -->
+          <div class="form-group">
+            <label for="reqCourseSearch">3. اختيار المادة <span class="required-star">*</span></label>
+            <div class="combobox-wrapper">
+              <input 
+                type="text" 
+                id="reqCourseSearch" 
+                class="input-custom" 
+                placeholder="ابحث باسم المادة (عربي أو إنجليزي)، رمز المساق (مثل CS101, MATH101) أو رقم السطر..." 
+                autocomplete="off"
+                required
+              >
+              <input type="hidden" id="selectedCourseId" required>
+              <div class="combobox-dropdown" id="comboboxDropdown"></div>
+            </div>
+            
+            <!-- Selected Course Preview Card -->
+            <div id="selectedCourseBadge" class="course-selected-card" style="display:none;"></div>
+          </div>
+
+          <!-- Step 3: Current Section & Desired Section -->
+          <div class="form-row-2">
+            <!-- Current Section (اللي عنده) -->
+            <div class="form-group">
+              <label for="reqCurrentSectionSelect">4. شعبتك الحالية (اللي معك) <span class="required-star">*</span></label>
+              <select id="reqCurrentSectionSelect" class="select-custom" required disabled>
+                <option value="">اختر المادة أولاً...</option>
+              </select>
+              <!-- Custom Section Input (appears when 'غير ذلك' is selected) -->
+              <div id="customCurrentSectionWrapper" style="display: none; margin-top: 8px;">
+                <input 
+                  type="number" 
+                  id="reqCustomCurrentSection" 
+                  class="input-custom" 
+                  placeholder="أدخل رقم شعبتك هنا (مثال: 5)"
+                  min="1" 
+                  max="99"
+                >
+                <small class="field-hint">اكتب رقم شعبتك إذا لم تكن موجودة بالقائمة</small>
+              </div>
+            </div>
+
+            <!-- Desired Section (اللي بده إياها) -->
+            <div class="form-group">
+              <label for="reqDesiredSectionSelect">5. الشعبة البديلة (اللي بدك إياها) <span class="required-star">*</span></label>
+              <select id="reqDesiredSectionSelect" class="select-custom" required disabled>
+                <option value="">اختر المادة أولاً...</option>
+              </select>
+              <!-- Custom Desired Section Input (appears when 'غير ذلك' is selected) -->
+              <div id="customDesiredSectionWrapper" style="display: none; margin-top: 8px;">
+                <input 
+                  type="text" 
+                  id="reqCustomDesiredSection" 
+                  class="input-custom" 
+                  placeholder="أدخل الشعب المطلوبة (مثال: 2 أو 2, 4)"
+                >
+                <small class="field-hint">يمكنك كتابة رقم شعبة واحدة أو أكثر مفصولة بفاصلة</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Contact Info & Student Nickname -->
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="reqPhone">6. رقم التواصل / واتساب <span class="required-star">*</span></label>
+              <div class="phone-input-group">
+                <span class="phone-prefix">🇯🇴 +962</span>
+                <input 
+                  type="tel" 
+                  id="reqPhone" 
+                  class="input-custom" 
+                  placeholder="07XXXXXXXX" 
+                  required 
+                  maxlength="10"
+                  pattern="07[789][0-9]{7}"
+                >
+              </div>
+              <small class="field-hint">سيتواصل معك زملاؤك مباشرة عبر الواتساب بنقرة واحدة</small>
+            </div>
+
+            <div class="form-group">
+              <label for="reqStudentName">اسمك أو لقبك (اختياري)</label>
+              <input type="text" id="reqStudentName" class="input-custom" placeholder="مثال: أحمد أو طالب حاسوب" maxlength="60">
+            </div>
+          </div>
+
+          <!-- Step 5: Password & Notes -->
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="reqPin">7. كلمة سر للطلب (باسورد) <span class="required-star">*</span></label>
+              <input 
+                type="password" 
+                id="reqPin" 
+                class="input-custom" 
+                placeholder="كلمة سر خاصة بهذا الطلب"
+                minlength="4"
+                maxlength="64"
+                autocomplete="new-password"
+                required
+              >
+              <small class="field-hint">4 أحرف أو أرقام على الأقل. احفظها لحذف طلبك من زر الإدارة على بطاقته. لا تستخدم كلمة سر حسابك الجامعي.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="reqNotes">8. ملاحظات إضافية (أوقات المحاضرة، الأيام...)</label>
+              <textarea 
+                id="reqNotes" 
+                class="textarea-custom" 
+                placeholder="مثال: معي شعبة 1 وقتها 9:30 أحد ثلاثاء خميس، وبدي شعبة 2 لتفادي تعارض المختبر."
+                rows="2"
+                maxlength="600"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><input type="checkbox" id="reqContactConsent" required> أوافق على عرض اسمي أو لقبي وملاحظاتي، ومشاركة رقم التواصل مع المهتمين بطلب التبادل.</label>
+            <small class="field-hint">لا تكتب معلومات حساسة أو رقم هاتف في الملاحظات. أرقام التواصل لا تظهر ضمن قائمة الطلبات.</small>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="cancelSubmitModalBtn">إلغاء</button>
+          <button type="submit" class="btn btn-primary" id="saveRequestSubmitBtn">
+            <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg><span>نشر طلب التبادل</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Manage / Delete Request Modal with Password Verification -->
+  <div class="modal-backdrop" id="manageModal" role="dialog" aria-modal="true" aria-labelledby="manageModalTitle">
+    <div class="modal-window" style="max-width: 440px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2 id="manageModalTitle">إدارة الطلب</h2>
+          <p id="manageModalSubtitle">تأكيد التبادل أو حذف الإعلان</p>
+        </div>
+        <button class="modal-close-btn" id="closeManageModalBtn" aria-label="إغلاق"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+          هل قمت بتبديل الشعبة بنجاح أو ترغب بحذف الطلب؟ أدخل كلمة السر الخاصة بطلبك للتأكيد:
+        </p>
+        <div class="form-group" style="margin-top: 14px;">
+          <label for="managePinInput">كلمة السر (الباسورد):</label>
+          <input type="password" id="managePinInput" class="input-custom" placeholder="كلمة السر التي اخترتها لهذا الطلب" minlength="4" maxlength="64" autocomplete="off">
+          <small class="field-hint" id="pinErrorMsg" style="color: var(--accent-red); display: none;">كلمة السر غير صحيحة، يرجى المحاولة ثانية.</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="cancelManageBtn">إلغاء</button>
+        <button type="button" class="btn btn-primary" id="confirmDeleteRequestBtn" style="background: var(--accent-red);">حذف الطلب نهائياً</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- App Footer -->
+  <footer class="app-footer" id="developers">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy">
+          <div class="footer-brand"><svg class="icon" aria-hidden="true"><use href="#i-swap"/></svg><strong>بَدّلني</strong><span>مساحة صغيرة، بتعمل فرق بجدولك.</span></div><p>© 2026 بَدّلني · لطلبة جامعة العلوم والتكنولوجيا الأردنية.</p>
+          <p class="footer-developers">المطورون: <a href="https://github.com/aboodalsharo" target="_blank" rel="noopener noreferrer" aria-label="عبد الرحمن الشرع على GitHub">عبد الرحمن الشرع <bdi class="developer-github">GitHub ↗</bdi></a> / <a href="https://github.com/omrandro12-dotcom" target="_blank" rel="noopener noreferrer" aria-label="عمران سريحين على GitHub">عمران سريحين <bdi class="developer-github">GitHub ↗</bdi></a></p>
+        </div>
+        <div class="footer-links">
+          <a href="#logoLink">الرئيسية</a>
+          <a href="#" id="footerAddBtn">إضافة طلب</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="coursesData.js?v=7.1" defer></script>
+  <script src="app.js?v=8" defer></script>
+  <script type="module" src="availability.js?v=7.2"></script>
+</body>
+</html>

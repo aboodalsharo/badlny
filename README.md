@@ -93,12 +93,12 @@ This password-based, account-free model has trade-offs: simple request passwords
 
 The hosted function is deliberately restricted to the original application's Supabase project and Netlify host. Forks must configure **their own** database, credentials, and reviewed host allowlist. Do not apply the local SQL files to production. See [deployment notes](docs/DEPLOYMENT.md).
 
-## Developers
+## Project team
 
 - **عبد الرحمن الشرع** — [@aboodalsharo](https://github.com/aboodalsharo)
 - **عمران سريحين** — [@omrandro12-dotcom](https://github.com/omrandro12-dotcom)
 
-Both developers are credited by the live site. Listing someone here does not grant repository or deployment access.
+Badlny is jointly developed and maintained by Abdul Rahman Alshara and Omran Sraihin as a student project.
 
 ## Project status
 

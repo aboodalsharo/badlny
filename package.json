@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "@netlify/functions": "6.0.0",
-    "pg": "8.23.0"
+    "pg": "8.23.1"
   }
 }
